@@ -1,0 +1,362 @@
+@font-face {
+  font-family: "GilroyThin";
+  src: url("../fonts/GilroyThin/GilroyThin.eot");
+  src: url("../fonts/GilroyThin/GilroyThin.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/GilroyThin/GilroyThin.woff") format("woff"),
+    url("../fonts/GilroyThin/GilroyThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  font-family: "GilroyThin", sans-serif;
+  background-color: #0b1d26;
+  background-image: url(/img/BG/BG.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #fff;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+/*base*/
+.container {
+  margin: 0 auto;
+  max-width: 1462px;
+  align-items: center;
+}
+.row {
+  display: flex;
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-items {
+  align-items: center;
+}
+
+/* Header*/
+.header {
+  margin-top: 64px;
+  font-family: "GilroyThin";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+}
+.logo {
+  font-family: "Chronicle Display";
+  font-size: 32px;
+}
+
+.nav a {
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+.nav a::after {
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.nav a:hover::after {
+  bottom: 0px;
+  opacity: 1;
+}
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  color: #fff;
+}
+.nav li + li {
+  margin-left: 40px;
+}
+.nav a:hover {
+  color: #fbd784;
+  transition: color 0.8s;
+}
+.account {
+  position: relative;
+  font-size: 17px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #fff;
+}
+.account:hover {
+  color: #fbd784;
+  transition: color 0.6s;
+}
+.account::before {
+  position: absolute;
+  left: -32px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  height: 24px;
+  width: 24px;
+  background-image: url(/icons/cart.svg);
+}
+.account :hover::before {
+  background-color: #fbd784;
+}
+/* HERO */
+.hero {
+  display: block;
+  max-width: 980px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 198px auto 0px;
+  text-decoration: none;
+  transition: transform 0.4s ease-in;
+  margin-bottom: 843px;
+}
+.hero:hover {
+  transform: translateY(5%);
+}
+
+.hero-category {
+  position: relative;
+  padding-left: 104px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+  bottom: 32px;
+}
+.hero-category::before {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+}
+
+.hero .headtext {
+  font-family: "Chronicle Display";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 88px;
+  color: #fff;
+}
+
+.hero-scroll {
+  display: inline-block;
+  position: relative;
+  margin-top: 32px;
+  padding-right: 32px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  color: #fff;
+}
+.hero-scroll::after {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  height: 24px;
+  width: 16px;
+  background-image: url(/icons/arrow_downward_24px.svg);
+}
+
+/* MAIN */
+.sectionmain {
+  margin-top: 843px;
+}
+.sectionmain a {
+  text-decoration: none;
+}
+.article {
+  margin-bottom: 200px;
+}
+.article_content::before {
+  position: absolute;
+  left: -150px;
+  top: -103px;
+  display: block;
+  content: attr(data-number);
+  font-size: 240px;
+  font-weight: 700;
+  line-height: 1;
+  width: 240px;
+  height: 240px;
+  color: rgba(255, 255, 255, 0.1);
+}
+.article_content {
+  position: relative;
+  max-width: 632px;
+  margin-left: 150px;
+}
+.article_getstarted {
+  position: relative;
+  padding-left: 104px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  color: #fbd784;
+  margin-bottom: 27px;
+}
+.article_getstarted::before {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  width: 72px;
+  height: 2px;
+  background-color: #fbd784;
+}
+.article_question {
+  font-family: "Chronicle Display";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+}
+.article_readmore {
+  margin-top: 27px;
+  display: inline-block;
+  padding-right: 32px;
+  position: relative;
+  font-family: "Gilroy";
+  font-weight: 800;
+  font-size: 18px;
+  color: #fbd784;
+}
+.article_readmore::after {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  content: "";
+  height: 16px;
+  width: 24px;
+  background-image: url(/icons/arrow_right.svg);
+}
+
+.article_text {
+  margin-top: 27px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.footer {
+  margin-bottom: 120px;
+}
+.footer-nav-wraper {
+  display: flex;
+}
+.copyright {
+}
+.footer-copyright-logo {
+}
+.logo {
+}
+.footer-copyright-text {
+  display: block;
+  margin-top: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+.footer-copyright-desc {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+}
+.footer-copyright-terms {
+  display: block;
+  margin-top: 122px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+.footer-nav {
+  display: block;
+  margin-top: 0px;
+}
+
+.footer-nav-title {
+  margin-left: 212px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #fbd784;
+}
+.footer-nav ul {
+  margin-top: 24px;
+  list-style: none;
+  padding-left: 0px;
+}
+.footer-nav li {
+  margin-top: 16px;
+}
+.footer-nav a {
+  position: relative;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  list-style: none;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+.footer-nav ::after {
+  position: absolute;
+  left: 0px;
+  bottom: -10px;
+  display: block;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0;
+  transition: all 0.2s ease-in;
+}
+.footer-nav a:hover::after {
+  bottom: 0px;
+  opacity: 1;
+}
